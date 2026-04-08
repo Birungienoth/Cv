@@ -3,112 +3,264 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me - BM-Takara Consults</title>
+<title>BIRUNGI ENOTH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-        color: #333;
-    }
-    h2 {
-        color: #0a4b78;
-        margin-top: 40px;
-    }
-    .section {
-        margin-bottom: 30px;
-    }
-    .experience-item {
-        margin-bottom: 20px;
-    }
-    .date {
-        font-weight: bold;
-        color: #555;
-    }
-    .org {
-        font-weight: bold;
-        color: #0a4b78;
-    }
+:root {
+  --navy:#1B3A6B;
+  --gold:#C8922A;
+  --cream:#FAF8F4;
+  --white:#ffffff;
+  --mid:#555;
+  --border:#e8e3d8;
+}
+
+body {
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  margin:0;
+}
+
+/* NAV */
+nav {
+  position:fixed;
+  top:0; left:0; right:0;
+  display:flex;
+  justify-content:space-between;
+  padding:1rem 3rem;
+  background:white;
+  border-bottom:1px solid var(--border);
+}
+
+.nav-logo {
+  font-family:'Playfair Display';
+  font-weight:700;
+  color:var(--navy);
+}
+
+.nav-logo span {color:var(--gold);}
+
+.nav-links {
+  display:flex;
+  gap:2rem;
+  list-style:none;
+}
+
+.nav-links a {
+  text-decoration:none;
+  color:var(--mid);
+  font-size:0.8rem;
+}
+
+/* HERO */
+.hero {
+  padding:8rem 3rem 4rem;
+}
+
+.hero-name {
+  font-family:'Playfair Display';
+  font-size:3rem;
+  color:var(--navy);
+}
+
+.hero-title {
+  color:var(--mid);
+  margin:1rem 0;
+}
+
+.hero-bio {
+  max-width:650px;
+  line-height:1.6;
+}
+
+/* SECTION */
+section {padding:4rem 3rem;}
+
+.section-title {
+  font-family:'Playfair Display';
+  color:var(--navy);
+  margin-bottom:1.5rem;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  gap:1.5rem;
+}
+
+/* CARDS */
+.card {
+  background:white;
+  border:1px solid var(--border);
+  padding:1.5rem;
+}
+
+/* CONTACT */
+.contact a {
+  display:block;
+  margin:0.5rem 0;
+  color:var(--navy);
+  text-decoration:none;
+}
 </style>
 </head>
+
 <body>
 
-<div class="section">
-<h2>About Me</h2>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">BIRUNGI <span>ENOTH</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#consultancy">Consultancy</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-<p>
-I am a MEAL Specialist / Statistician and Director of <strong>BM-Takara Consults Ltd</strong>, a consultancy firm specializing in research, monitoring and evaluation, and data systems strengthening. I bring over five years of progressive experience delivering high-quality evidence across development and humanitarian contexts in Uganda and the wider region.
-</p>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="hero-name">BIRUNGI ENOTH</h1>
+  <p class="hero-title"><i>MEAL Specialist | Statistician | Founder, BM-Takara Consults Ltd</i></p>
+  <p class="hero-bio">
+    Results-driven Monitoring, Evaluation, Accountability, and Learning (MEAL) professional with over 5 years of experience across development and humanitarian programs including Education, Livelihoods, WASH, Food Security, Gender, Youth, and Disability Inclusion.
+  </p>
+</section>
 
-<p>
-I have led and contributed to a wide range of baseline, midline, and endline evaluations, market system analyses, and impact assessments for international organizations including World Vision, CARE International, Oxfam, IRC, Action Against Hunger, and KOICA. My work focuses on generating actionable insights that inform program design, improve performance, and enhance accountability to beneficiaries and donors.
-</p>
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
 
-<p>
-My technical expertise spans the design of MEAL systems, indicator frameworks, and digital data collection platforms. I am highly skilled in integrating tools such as Kobo Toolbox, ODK, and R to build efficient, real-time data systems, and in developing interactive dashboards using Power BI to support data-driven decision-making.
-</p>
+  <p>
+    I am a MEAL Specialist, Statistician, and Director of <strong>BM-Takara Consults Ltd</strong>, a consultancy firm specializing in research, monitoring and evaluation, and data systems strengthening. I bring over five years of progressive experience delivering high-quality evidence across development and humanitarian contexts in Uganda and the wider region.
+  </p>
 
-<p>
-Beyond analytics, I have strong experience in capacity strengthening, having trained partners and field teams in data collection technologies, data management, and analysis using tools such as Excel, SPSS, STATA, and R. I am passionate about translating complex data into clear, meaningful insights that drive impact at community and policy levels.
-</p>
-</div>
+  <p>
+    I have led and contributed to a wide range of baseline, midline, and endline evaluations, market systems analyses, and impact assessments for international organizations including World Vision, CARE International, Oxfam, IRC, Action Against Hunger, and KOICA.
+  </p>
 
-<div class="section">
-<h2>Consultancies & Professional Experience</h2>
+  <p>
+    My technical expertise spans the design of MEAL systems, indicator frameworks, and digital data collection platforms using tools such as Kobo Toolbox, ODK, and R, alongside dashboard development in Power BI.
+  </p>
 
-<div class="experience-item">
-<span class="date">September 2025</span> — <span class="org">World Vision</span><br>
-Evaluator: Conducted endline evaluation of a three-year MHPSS Programme in Bidibidi Refugee Settlement and host communities, focusing on child and caregiver emotional well-being through PFA, Positive Parenting, and livelihood strengthening.
-</div>
+  <p>
+    I am also experienced in capacity strengthening, training teams in data collection, management, and analysis using Excel, SPSS, STATA, and R, and translating complex data into actionable insights.
+  </p>
+</section>
 
-<div class="experience-item">
-<span class="date">July 2025</span> — <span class="org">DanChurchAid (DCA)</span><br>
-Evaluator: Conducted Local Market Systems Analysis for the URRI project targeting climate resilience and inclusive development among refugee and host communities.
-</div>
+<!-- SKILLS -->
+<section>
+  <h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="card">MEAL Systems & Logframes</div>
+    <div class="card">Data Analysis (R, STATA, SPSS, Excel)</div>
+    <div class="card">Survey Tools (ODK, Kobo, SurveyCTO)</div>
+    <div class="card">Dashboard Development (Power BI)</div>
+    <div class="card">GIS Mapping</div>
+    <div class="card">Training & Capacity Building</div>
+  </div>
+</section>
 
-<div class="experience-item">
-<span class="date">June 2025</span> — <span class="org">World Vision</span><br>
-Evaluator: Led baseline survey for the USWIFI project in Kamwenge assessing water systems, financial sustainability, service delivery models, and user satisfaction.
-</div>
+<!-- EXPERIENCE (UNCHANGED) -->
+<section id="experience">
+  <h2 class="section-title">Employment</h2>
 
-<div class="experience-item">
-<span class="date">June 2025</span> — <span class="org">World Vision</span><br>
-Data Analyst/Researcher: Contributed to endline evaluation of Lunyo Area Programme including tool design, data analysis, and reporting.
-</div>
+  <div class="card">
+    <h3>Founder/Director – BM-Takara Consults Ltd</h3>
+    <p><i>2024 – Present</i></p>
+    <p>Leading research, MEAL system design, and evaluation consultancy services.</p>
+  </div>
 
-<div class="experience-item">
-<span class="date">May 2025</span> — <span class="org">Action Aid Uganda</span><br>
-Data Analyst/Researcher: Oversaw data collection and analysis for baseline study on ending harmful practices in Karamoja.
-</div>
+  <div class="card">
+    <h3>Data Consultant – Tax Justice Network Africa</h3>
+    <p><i>Feb 2025 – Present</i></p>
+  </div>
 
-<div class="experience-item">
-<span class="date">Feb 2025 – Present</span> — <span class="org">Tax Justice Network Africa</span><br>
-Data Consultant: Leading data collection, cleaning, analysis, and supporting research, reporting, and stakeholder engagement under DevTransform initiatives.
-</div>
+  <div class="card">
+    <h3>Data Analyst – Maarifa Consult</h3>
+    <p><i>Jan 2023 – Present</i></p>
+  </div>
 
-<div class="experience-item">
-<span class="date">2024 – 2023</span><br>
-Extensive consultancy work with <strong>World Vision, CARE International, Save the Children, Oxfam, WFP partners, KOICA, German Doctors, Welthungerhilfe, Action Against Hunger, Right to Play</strong> and others across Uganda and South Sudan.
-<ul>
-<li>Baseline, midline, and endline evaluations</li>
-<li>Market systems and resilience studies</li>
-<li>Education, WASH, health, nutrition, and GBV programming</li>
-<li>Mixed-methods research design and implementation</li>
-<li>Impact evaluations and learning documentation</li>
-</ul>
-</div>
+  <div class="card">
+    <h3>Evaluation Specialist – MC WILL Ltd</h3>
+    <p><i>Oct – Nov 2024</i></p>
+  </div>
 
-<div class="experience-item">
-<span class="date">2022 – 2021</span><br>
-Earlier roles including Research Assistant, Data Clerk, and Associate Trainer with organizations such as Ace Policy Research Institute, Development Initiative Poverty Research Ltd, and Local Governments under Ministry of Health.
-</div>
+  <div class="card">
+    <h3>Associate Trainer – Development Initiative</h3>
+    <p><i>Part-time</i></p>
+  </div>
 
-</div>
+  <div class="card">
+    <h3>Research Assistant – ACE Policy Research Institute</h3>
+    <p><i>May – June 2022</i></p>
+  </div>
 
-<div class="section">
-<h2>Contact</h2>
-<p><strong>Phone:</strong> 0703177364</p>
-</div>
+</section>
+
+<!-- CONSULTANCY -->
+<section id="consultancy">
+  <h2 class="section-title">Key Consultancy & Evaluations</h2>
+
+  <div class="card">
+    <strong>World Vision (September 2025)</strong>
+    <p>Endline evaluation of a three-year MHPSS Programme in Bidibidi Refugee Settlement and host communities.</p>
+  </div>
+
+  <div class="card">
+    <strong>DanChurchAid (DCA) (July 2025)</strong>
+    <p>Local Market Systems Analysis for the URRI project supporting refugee resilience.</p>
+  </div>
+
+  <div class="card">
+    <strong>World Vision (June 2025)</strong>
+    <p>Baseline survey for the USWIFI project in Kamwenge assessing water systems and service delivery.</p>
+  </div>
+
+  <div class="card">
+    <strong>World Vision (June 2025)</strong>
+    <p>Endline evaluation of Lunyo Area Programme including data analysis and reporting.</p>
+  </div>
+
+  <div class="card">
+    <strong>ActionAid Uganda (May 2025)</strong>
+    <p>Baseline study on ending harmful practices in Karamoja.</p>
+  </div>
+
+  <div class="card">
+    <strong>Multi-Organization Consultancies (2023–2024)</strong>
+    <p>Baseline, midline, and endline evaluations, market systems studies, and projects across WASH, education, health, nutrition, and GBV.</p>
+  </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="section-title">Education</h2>
+
+  <div class="card">
+    <h3>Master of Statistics (Ongoing)</h3>
+    <p>Makerere University (2025–2027)</p>
+  </div>
+
+  <div class="card">
+    <h3>BSc Business Statistics</h3>
+    <p>Makerere University (2018–2021)</p>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <a href="mailto:birungienoth@gmail.com">✉ birungienoth@gmail.com</a>
+  <a href="tel:+256787329280">📞 +256 787 329280</a>
+  <a href="tel:+256703177364">📞 +256 703 177364</a>
+</section>
 
 </body>
 </html>
