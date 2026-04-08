@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -54,55 +54,66 @@ nav {
   font-size:0.8rem;
 }
 
-/* HERO */
+/* HERO (REDUCED SPACE) */
 .hero {
-  padding:8rem 3rem 4rem;
+  padding:7rem 3rem 2.5rem;
 }
 
 .hero-name {
   font-family:'Playfair Display';
-  font-size:3rem;
+  font-size:2.5rem;
   color:var(--navy);
+  margin-bottom:0.3rem;
 }
 
 .hero-title {
   color:var(--mid);
-  margin:1rem 0;
+  margin:0.3rem 0;
 }
 
 .hero-bio {
-  max-width:650px;
-  line-height:1.6;
+  max-width:600px;
+  line-height:1.5;
+  font-size:0.95rem;
 }
 
 /* SECTION */
-section {padding:4rem 3rem;}
+section {padding:3rem 3rem;}
 
 .section-title {
   font-family:'Playfair Display';
   color:var(--navy);
-  margin-bottom:1.5rem;
+  margin-bottom:1rem;
 }
 
 /* GRID */
 .grid {
   display:grid;
-  gap:1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:1rem;
 }
 
 /* CARDS */
 .card {
   background:white;
   border:1px solid var(--border);
-  padding:1.5rem;
+  padding:1rem;
+  font-size:0.9rem;
+}
+
+/* LIST STYLE */
+.card ul {
+  padding-left:1rem;
+  margin:0.5rem 0 0;
 }
 
 /* CONTACT */
 .contact a {
   display:block;
-  margin:0.5rem 0;
+  margin:0.3rem 0;
   color:var(--navy);
   text-decoration:none;
+  font-size:0.9rem;
 }
 </style>
 </head>
@@ -126,36 +137,62 @@ section {padding:4rem 3rem;}
   <h1 class="hero-name">BIRUNGI ENOTH</h1>
   <p class="hero-title"><i>MEAL Specialist | Statistician | Founder</i></p>
   <p class="hero-bio">
-    Results-driven Monitoring, Evaluation, Accountability, and Learning (MEAL) professional with over 5 years of experience across development and humanitarian programs including Education, Livelihoods, WASH, Food Security, Gender, Youth, and Disability Inclusion.
+    MEAL professional with 5+ years’ experience in evaluations, data systems, and analytics across humanitarian and development programs.
   </p>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <h2 class="section-title">About Me</h2>
+  <h2 class="section-title">About</h2>
   <p>
-    I am the Founder and Director of <strong>BM-Takara Consults Ltd</strong>, a firm specializing in research, data systems, and program evaluation. I have supported numerous national and international organizations in conducting high-quality evaluations, baseline studies, and impact assessments.
-  </p>
-
-  <p>
-    My expertise includes designing MEAL systems, indicator frameworks, and real-time data systems using tools such as R, Kobo Toolbox, ODK, and Power BI.
-  </p>
-
-  <p>
-    I have worked with organizations including World Vision, CARE International, Oxfam, IRC, Action Against Hunger, and KOICA across Uganda, South Sudan, and Sudan.
+    Founder & Director of <strong>BM-Takara Consults Ltd</strong>, delivering research, evaluations, and data systems. Experienced in leading baseline, midline, and endline studies for organizations including World Vision, CARE, Oxfam, IRC, and Action Against Hunger.
   </p>
 </section>
 
 <!-- SKILLS -->
 <section>
-  <h2 class="section-title">Skills</h2>
+  <h2 class="section-title">Core Skills</h2>
   <div class="grid">
-    <div class="card">MEAL Systems & Logframes</div>
-    <div class="card">Data Analysis (R, STATA, SPSS, Excel)</div>
-    <div class="card">Survey Tools (ODK, Kobo, SurveyCTO)</div>
-    <div class="card">Dashboard Development (Power BI)</div>
-    <div class="card">GIS Mapping</div>
-    <div class="card">Training & Capacity Building</div>
+
+    <div class="card">
+      <strong>Data Analysis</strong>
+      <ul>
+        <li>R, STATA, SPSS, Excel, Power BI</li>
+        <li>Tabular, GIS analysis</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Data Systems</strong>
+      <ul>
+        <li>ODK, Kobo Toolbox</li>
+        <li>NextCloud & dashboard integration</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Training & Capacity Building</strong>
+      <ul>
+        <li>Trainer in Kobo, ODK</li>
+        <li>Excel, SPSS, STATA training</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>MEAL & Reporting</strong>
+      <ul>
+        <li>Report documentation</li>
+        <li>Logframes & indicator frameworks</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Software</strong>
+      <ul>
+        <li>MS Office (Word, Excel, Access, PowerPoint)</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
@@ -164,82 +201,59 @@ section {padding:4rem 3rem;}
   <h2 class="section-title">Employment</h2>
 
   <div class="card">
-    <h3>Founder/Director – BM-Takara Consults Ltd</h3>
+    <strong>Founder/Director – BM-Takara Consults Ltd</strong>
     <p><i>2024 – Present</i></p>
-    <p>Leading research, MEAL system design, and evaluation consultancy services.</p>
   </div>
 
   <div class="card">
-    <h3>Data Consultant – Tax Justice Network Africa</h3>
+    <strong>Data Consultant – Tax Justice Network Africa</strong>
     <p><i>Feb 2025 – Present</i></p>
   </div>
 
   <div class="card">
-    <h3>Data Analyst – Maarifa Consult</h3>
+    <strong>Data Analyst – Maarifa Consult</strong>
     <p><i>Jan 2023 – Present</i></p>
-  </div>
-
-  <div class="card">
-    <h3>Evaluation Specialist – MC WILL Ltd</h3>
-    <p><i>Oct – Nov 2024</i></p>
-  </div>
-
-  <div class="card">
-    <h3>Associate Trainer – Development Initiative</h3>
-    <p><i>Part-time</i></p>
-  </div>
-
-  <div class="card">
-    <h3>Research Assistant – ACE Policy Research Institute</h3>
-    <p><i>May – June 2022</i></p>
   </div>
 
 </section>
 
-<!-- CONSULTANCY -->
+<!-- CONSULTANCY (IMPROVED FORMAT) -->
 <section id="consultancy">
-  <h2 class="section-title">Key Consultancy & Evaluations</h2>
+  <h2 class="section-title">Key Consultancy</h2>
 
-  <div class="card">
-    <strong>World Vision (2025)</strong>
-    <p>Endline evaluation of MHPSS programme in Bidibidi Refugee Settlement.</p>
+  <div class="grid">
+
+    <div class="card">
+      <strong>Endline Evaluation – MHPSS Programme</strong><br>
+      World Vision (2025)
+    </div>
+
+    <div class="card">
+      <strong>Market Systems Analysis – URRI Project</strong><br>
+      DCA / DRC (2025)
+    </div>
+
+    <div class="card">
+      <strong>Baseline – Harmful Practices Project</strong><br>
+      ActionAid (2025)
+    </div>
+
+    <div class="card">
+      <strong>Midterm Evaluation – Food Systems</strong><br>
+      WHH (2024)
+    </div>
+
+    <div class="card">
+      <strong>Endline Evaluation – GBV (APEAL IV)</strong><br>
+      CARE International (2024)
+    </div>
+
+    <div class="card">
+      <strong>Baseline – Malnutrition Project</strong><br>
+      German Doctors (2024)
+    </div>
+
   </div>
-
-  <div class="card">
-    <strong>DCA / DRC Consortium (2025)</strong>
-    <p>Local Market Systems Analysis for URRI Project targeting refugee resilience.</p>
-  </div>
-
-  <div class="card">
-    <strong>ActionAid (2025)</strong>
-    <p>Baseline assessment for Ending Harmful Practices in Karamoja.</p>
-  </div>
-
-  <div class="card">
-    <strong>German Doctors (2024)</strong>
-    <p>Baseline survey on malnutrition reduction project in Eastern Uganda.</p>
-  </div>
-
-  <div class="card">
-    <strong>CARE International (2024)</strong>
-    <p>Endline evaluation of GBV and protection project (APEAL IV).</p>
-  </div>
-
-  <div class="card">
-    <strong>WELTHUNGERHILFE (2024)</strong>
-    <p>Mid-term evaluation of climate-sensitive food systems project in South Sudan.</p>
-  </div>
-
-  <div class="card">
-    <strong>Save the Children (2024)</strong>
-    <p>Endline evaluation of remedial learning and school health projects.</p>
-  </div>
-
-  <div class="card">
-    <strong>Oxfam (2023)</strong>
-    <p>Baseline study on resilience and governance in Karamoja.</p>
-  </div>
-
 </section>
 
 <!-- EDUCATION -->
@@ -247,13 +261,11 @@ section {padding:4rem 3rem;}
   <h2 class="section-title">Education</h2>
 
   <div class="card">
-    <h3>Master of Statistics (Ongoing)</h3>
-    <p>Makerere University (2025–2027)</p>
+    <strong>Master of Statistics</strong> – Makerere University (Ongoing)
   </div>
 
   <div class="card">
-    <h3>BSc Business Statistics</h3>
-    <p>Makerere University (2018–2021)</p>
+    <strong>BSc Business Statistics</strong> – Makerere University
   </div>
 
 </section>
@@ -264,7 +276,6 @@ section {padding:4rem 3rem;}
 
   <a href="mailto:birungienoth@gmail.com">✉ birungienoth@gmail.com</a>
   <a href="tel:+256787329280">📞 +256 787 329280</a>
-  <a href="tel:+256703177364">📞 +256 703 177364</a>
 </section>
 
 </body>
