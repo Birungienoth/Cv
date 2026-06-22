@@ -1,69 +1,51 @@
-portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── images/
-│      profile.jpg
-│      favicon.png
-│
-└── docs/
-       Enoth_Birungi_CV.pdf
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enoth Birungi | Monitoring, Evaluation & Learning Specialist</title>
+    <title>Enoth Birungi | MEAL Specialist & Statistician</title>
 
     <meta name="description"
-        content="Official Portfolio of Enoth Birungi - Monitoring, Evaluation, Accountability and Learning Specialist, Statistician and Research Consultant.">
+        content="Official portfolio of Enoth Birungi - Monitoring, Evaluation, Accountability and Learning Specialist, Statistician and Research Consultant.">
 
     <meta name="keywords"
-        content="MEAL Specialist, Statistician, Research Consultant, Monitoring and Evaluation, Data Analyst, Power BI, STATA, R, SurveyCTO, Kobo Toolbox">
+        content="MEAL Specialist, Statistician, Monitoring and Evaluation, Research Consultant, Power BI, STATA, R, SurveyCTO, Kobo Toolbox">
 
-    <meta name="author"
-        content="Enoth Birungi">
+    <meta name="author" content="Enoth Birungi">
 
-    <!-- Google Fonts -->
+    <!-- Google Font -->
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
 
     <!-- Font Awesome -->
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- Animate on Scroll -->
+    <!-- Animate On Scroll -->
 
     <link rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Main CSS -->
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- ========================= -->
-<!-- LOADING SCREEN            -->
-<!-- ========================= -->
+<!--==========================
+    LOADER
+===========================-->
 
 <div id="loader">
 
@@ -71,100 +53,97 @@ portfolio/
 
 </div>
 
-<!-- ========================= -->
-<!-- HEADER                    -->
-<!-- ========================= -->
+<!--==========================
+    HEADER
+===========================-->
 
 <header class="header">
 
-<nav class="navbar">
+    <div class="container">
 
-<div class="logo">
+        <nav class="navbar">
 
-<h2>
+            <a href="#" class="logo">
 
-ENOTH<span>.</span>
+                ENOTH<span>.</span>
 
-</h2>
+            </a>
 
-</div>
+            <ul class="nav-links">
 
-<ul class="nav-links">
+                <li><a href="#home">Home</a></li>
 
-<li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
 
-<li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
 
-<li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
 
-<li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
 
-<li><a href="#experience">Experience</a></li>
+            </ul>
 
-<li><a href="#skills">Skills</a></li>
+            <div class="nav-actions">
 
-<li><a href="#contact">Contact</a></li>
+                <a href="docs/Enoth_Birungi_CV.pdf"
+                   class="btn btn-primary"
+                   download>
 
-</ul>
+                    Download CV
 
-<div class="nav-buttons">
+                </a>
 
-<a href="docs/Enoth_Birungi_CV.pdf"
-download
-class="download-btn">
+                <button id="theme-toggle">
 
-Download CV
+                    <i class="fa-solid fa-moon"></i>
 
-</a>
+                </button>
 
-<button id="theme-toggle">
+            </div>
 
-<i class="fa-solid fa-moon"></i>
+            <div class="menu-toggle">
 
-</button>
+                <i class="fa-solid fa-bars"></i>
 
-</div>
+            </div>
 
-<div class="menu-btn">
+        </nav>
 
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
-</nav>
+    </div>
 
 </header>
 
-<!-- ========================= -->
-<!-- HERO                      -->
-<!-- ========================= -->
+<!--==========================
+    HERO
+===========================-->
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
 <div class="container">
 
 <div class="hero-grid">
 
-<!-- LEFT -->
+<!-- LEFT SIDE -->
 
-<div class="hero-content"
-data-aos="fade-right">
+<div class="hero-content" data-aos="fade-right">
 
-<p class="hero-small">
+<span class="hero-tag">
 
 Monitoring • Evaluation • Research • Statistics
 
-</p>
+</span>
 
 <h1>
 
-Transforming Data Into Evidence
+Transforming
 
 <span>
 
-That Drives Impact
+Data Into Evidence
 
 </span>
+
+That Drives Impact
 
 </h1>
 
@@ -176,29 +155,23 @@ Enoth Birungi
 
 <h4>
 
-Monitoring, Evaluation,
-Accountability &
-Learning Specialist
+Monitoring, Evaluation, Accountability &
+Learning (MEAL) Specialist
 
 </h4>
 
-<p class="hero-description">
+<p>
 
 Results-driven Monitoring, Evaluation,
 Accountability and Learning (MEAL)
 Specialist and Statistician with over
-6 years of experience supporting
-humanitarian and development programmes
-across Uganda,
-Kenya,
-and South Sudan.
-
-Experienced in programme evaluations,
-MEAL framework development,
-Power BI dashboards,
+six years of experience supporting
+development and humanitarian programmes
+through research,
+programme evaluations,
 digital data systems,
+Power BI dashboards,
 statistical modelling,
-research,
 and evidence-based decision making.
 
 </p>
@@ -206,14 +179,16 @@ and evidence-based decision making.
 <div class="hero-buttons">
 
 <a href="#projects"
-class="primary-btn">
+
+class="btn btn-primary">
 
 View Portfolio
 
 </a>
 
 <a href="#contact"
-class="secondary-btn">
+
+class="btn btn-outline">
 
 Hire Me
 
@@ -224,9 +199,10 @@ Hire Me
 <div class="hero-social">
 
 <a href="https://www.linkedin.com/in/birungi-enoth-705671269"
+
 target="_blank">
 
-<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-linkedin"></i>
 
 </a>
 
@@ -242,8 +218,7 @@ target="_blank">
 
 </a>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME"
-target="_blank">
+<a href="#">
 
 <i class="fab fa-github"></i>
 
@@ -253,17 +228,19 @@ target="_blank">
 
 </div>
 
-<!-- RIGHT -->
+<!-- RIGHT SIDE -->
 
 <div class="hero-image"
+
 data-aos="fade-left">
 
-<div class="image-box">
+<div class="image-card">
 
 <img src="images/profile.jpg"
+
 alt="Enoth Birungi">
 
-<div class="availability-card">
+<div class="floating-card">
 
 <i class="fa-solid fa-circle-check"></i>
 
@@ -281,148 +258,674 @@ Available for Consultancy
 
 </section>
 
-<!-- ========================================== -->
-<!-- RESPONSE 2 STARTS HERE                     -->
-<!-- Statistics + Trusted By + Services         -->
-<!-- ========================================== -->
-  portfolio/
-
-index.html
-style.css
-script.js
-
-images/
-    profile.jpg
-
-docs/
-    Enoth_Birungi_CV.pdf
-
-  portfolio/
-
-index.html
-style.css
-script.js
-
-images/
-    profile.jpg
-
-docs/
-    Enoth_Birungi_CV.pdf
-
-  <!-- ===================================================== -->
-<!-- ABOUT -->
+<!-- ===================================================== -->
+<!-- STATISTICS -->
 <!-- ===================================================== -->
 
-<section id="about" class="about">
+<section id="statistics" class="statistics">
 
     <div class="container">
 
-        <div class="about-grid">
+        <div class="section-header" data-aos="fade-up">
 
-            <!-- LEFT -->
+            <span class="section-subtitle">Professional Highlights</span>
 
-            <div class="about-image" data-aos="fade-right">
+            <h2>Delivering Results Through Evidence</h2>
 
-                <div class="image-frame">
+            <p>
+                My work combines statistics, monitoring and evaluation,
+                digital data systems and evidence generation to strengthen
+                humanitarian and development programmes.
+            </p>
 
-                    <img src="images/profile.jpg"
-                         alt="Enoth Birungi">
+        </div>
 
-                    <div class="experience-badge">
+        <div class="stats-grid">
 
-                        <h2>6+</h2>
+            <div class="stat-card" data-aos="zoom-in">
 
-                        <p>Years Experience</p>
+                <i class="fa-solid fa-calendar-check"></i>
 
-                    </div>
+                <h2 class="counter" data-target="6">6+</h2>
+
+                <h4>Years Experience</h4>
+
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <h2 class="counter" data-target="40">40+</h2>
+
+                <h4>Consultancies</h4>
+
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+
+                <i class="fa-solid fa-handshake"></i>
+
+                <h2 class="counter" data-target="15">15+</h2>
+
+                <h4>Development Partners</h4>
+
+            </div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+
+                <i class="fa-solid fa-earth-africa"></i>
+
+                <h2 class="counter" data-target="4">4</h2>
+
+                <h4>Countries Supported</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- TRUSTED BY -->
+<!-- ===================================================== -->
+
+<section id="clients" class="clients">
+
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+
+            <span class="section-subtitle">
+
+                Trusted By
+
+            </span>
+
+            <h2>
+
+                Organizations I Have Worked With
+
+            </h2>
+
+            <p>
+
+                Supporting leading NGOs,
+                consulting firms,
+                government programmes,
+                and development partners.
+
+            </p>
+
+        </div>
+
+        <div class="client-grid">
+
+            <div class="client-card">World Vision Uganda</div>
+
+            <div class="client-card">CARE International</div>
+
+            <div class="client-card">DanChurchAid (DCA)</div>
+
+            <div class="client-card">Tax Justice Network Africa</div>
+
+            <div class="client-card">Welthungerhilfe (WHH)</div>
+
+            <div class="client-card">Action Against Hunger</div>
+
+            <div class="client-card">Save the Children</div>
+
+            <div class="client-card">Oxfam Uganda</div>
+
+            <div class="client-card">EDUKANS</div>
+
+            <div class="client-card">Evidence & Insights Group</div>
+
+            <div class="client-card">MAARIFA Consult</div>
+
+            <div class="client-card">MC WILL Ltd</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services" class="services">
+
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+
+            <span class="section-subtitle">
+
+                Professional Services
+
+            </span>
+
+            <h2>
+
+                How I Can Support Your Organization
+
+            </h2>
+
+            <p>
+
+                I provide end-to-end monitoring,
+                evaluation,
+                research,
+                statistical analysis,
+                dashboard development,
+                and digital data solutions.
+
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+
+                    Monitoring & Evaluation
+
+                </h3>
+
+                <p>
+
+                    Design of MEAL systems,
+                    indicator frameworks,
+                    logframes,
+                    performance monitoring plans
+                    and learning agendas.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                <h3>
+
+                    Research & Evaluations
+
+                </h3>
+
+                <p>
+
+                    Baseline,
+                    midline,
+                    endline,
+                    impact evaluations,
+                    assessments
+                    and mixed-methods research.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-chart-pie"></i>
+
+                <h3>
+
+                    Data Analytics
+
+                </h3>
+
+                <p>
+
+                    Statistical analysis,
+                    Power BI dashboards,
+                    visualization,
+                    reporting
+                    and interpretation.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+                <h3>
+
+                    Digital Data Collection
+
+                </h3>
+
+                <p>
+
+                    Kobo Toolbox,
+                    SurveyCTO,
+                    ODK,
+                    CommCare,
+                    and mobile survey systems.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>
+
+                    Data Quality Assurance
+
+                </h3>
+
+                <p>
+
+                    Data verification,
+                    validation,
+                    cleaning,
+                    quality assessments
+                    and consistency checks.
+
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-chalkboard-user"></i>
+
+                <h3>
+
+                    Capacity Building
+
+                </h3>
+
+                <p>
+
+                    Training programme teams,
+                    enumerators,
+                    government staff
+                    and partners in MEAL,
+                    statistics
+                    and digital systems.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FEATURED CONSULTANCY PORTFOLIO -->
+<!-- ===================================================== -->
+
+<section id="projects" class="projects">
+
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+
+            <span class="section-subtitle">
+
+                Consultancy Portfolio
+
+            </span>
+
+            <h2>
+
+                Featured Projects
+
+            </h2>
+
+            <p>
+
+                Selected assignments demonstrating my experience in
+                monitoring, evaluation, research, statistics,
+                learning systems, digital data collection,
+                and evidence generation.
+
+            </p>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card" data-aos="fade-up">
+
+                <div class="project-header">
+
+                    <span class="project-type">
+
+                        ENDLINE EVALUATION
+
+                    </span>
+
+                    <span class="project-year">
+
+                        2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    Mental Health &
+                    Psychosocial Support Programme
+
+                </h3>
+
+                <h4>
+
+                    World Vision Uganda
+
+                </h4>
+
+                <p>
+
+                    Led quantitative and qualitative data analysis,
+                    indicator measurement,
+                    performance assessment,
+                    dashboard development,
+                    and report writing for the programme endline evaluation.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Evaluation</span>
+
+                    <span>MEAL</span>
+
+                    <span>Statistics</span>
 
                 </div>
 
             </div>
 
-            <!-- RIGHT -->
+            <!-- PROJECT 2 -->
 
-            <div class="about-content"
-                 data-aos="fade-left">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
 
-                <span class="section-tag">
+                <div class="project-header">
 
-                    ABOUT ME
+                    <span class="project-type">
 
-                </span>
+                        MARKET SYSTEMS
 
-                <h2>
+                    </span>
 
-                    Turning Research,
-                    Data and Evidence
-                    Into Better Decisions
+                    <span class="project-year">
 
-                </h2>
+                        2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    Uganda Refugee
+                    Resilience Initiative
+
+                </h3>
+
+                <h4>
+
+                    DanChurchAid (DCA)
+
+                </h4>
 
                 <p>
 
-                    I am a Monitoring,
-                    Evaluation,
-                    Accountability and Learning (MEAL)
-                    Specialist and Statistician with over
-                    six years of experience supporting
-                    humanitarian and development programmes
-                    across Uganda,
-                    Kenya,
-                    and South Sudan.
+                    Conducted Local Market Systems Analysis,
+                    stakeholder mapping,
+                    value chain assessments,
+                    and livelihood analysis
+                    supporting refugee resilience programming.
 
                 </p>
 
+                <div class="project-tags">
+
+                    <span>Markets</span>
+
+                    <span>Livelihoods</span>
+
+                    <span>Research</span>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="project-header">
+
+                    <span class="project-type">
+
+                        IMPACT EVALUATION
+
+                    </span>
+
+                    <span class="project-year">
+
+                        2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    APEAL IV Programme
+
+                </h3>
+
+                <h4>
+
+                    CARE International
+
+                </h4>
+
                 <p>
 
-                    My work focuses on strengthening
-                    programme performance through
-                    robust monitoring systems,
-                    high-quality evaluations,
-                    digital data solutions,
+                    Supported programme evaluation,
+                    mixed-methods data collection,
                     statistical analysis,
-                    dashboards,
-                    and evidence-based reporting.
+                    and evidence generation for refugee programming.
 
                 </p>
+
+                <div class="project-tags">
+
+                    <span>CARE</span>
+
+                    <span>Protection</span>
+
+                    <span>Evaluation</span>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card" data-aos="fade-up">
+
+                <div class="project-header">
+
+                    <span class="project-type">
+
+                        MIDTERM EVALUATION
+
+                    </span>
+
+                    <span class="project-year">
+
+                        2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    Climate Sensitive
+                    Food Systems
+
+                </h3>
+
+                <h4>
+
+                    Welthungerhilfe (WHH)
+
+                </h4>
 
                 <p>
 
-                    I have successfully worked with
-                    international NGOs,
-                    consortiums,
-                    consulting firms,
-                    donor-funded programmes,
-                    and government institutions across
-                    Education,
-                    WASH,
-                    Nutrition,
-                    Livelihoods,
-                    Protection,
-                    Health,
-                    Climate,
-                    Gender,
-                    Youth,
-                    and Governance.
+                    Conducted programme performance review,
+                    resilience assessment,
+                    food security analysis,
+                    and stakeholder consultations.
 
                 </p>
 
-                <div class="about-buttons">
+                <div class="project-tags">
 
-                    <a href="#projects"
-                       class="primary-btn">
+                    <span>Climate</span>
 
-                        View Consultancy Work
+                    <span>Food Security</span>
 
-                    </a>
+                    <span>WHH</span>
 
-                    <a href="docs/Enoth_Birungi_CV.pdf"
-                       download
-                       class="secondary-btn">
+                </div>
 
-                        Download CV
+            </div>
 
-                    </a>
+            <!-- PROJECT 5 -->
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="project-header">
+
+                    <span class="project-type">
+
+                        BASELINE STUDY
+
+                    </span>
+
+                    <span class="project-year">
+
+                        2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    USWIFI Programme
+
+                </h3>
+
+                <h4>
+
+                    World Vision Uganda
+
+                </h4>
+
+                <p>
+
+                    Led statistical analysis,
+                    Power BI dashboard development,
+                    data quality assurance,
+                    and reporting for water systems programming.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>WASH</span>
+
+                    <span>Power BI</span>
+
+                    <span>Statistics</span>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 6 -->
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="project-header">
+
+                    <span class="project-type">
+
+                        MULTIPLE CONSULTANCIES
+
+                    </span>
+
+                    <span class="project-year">
+
+                        2023–2025
+
+                    </span>
+
+                </div>
+
+                <h3>
+
+                    Research &
+                    Evaluation Portfolio
+
+                </h3>
+
+                <h4>
+
+                    Action Against Hunger •
+                    Oxfam •
+                    Save the Children •
+                    EDUKANS
+
+                </h4>
+
+                <p>
+
+                    Delivered baseline,
+                    midline,
+                    endline,
+                    market assessments,
+                    data analytics,
+                    dashboard development,
+                    and evaluation reports across multiple sectors.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Research</span>
+
+                    <span>MEAL</span>
+
+                    <span>Analytics</span>
 
                 </div>
 
@@ -435,418 +938,111 @@ docs/
 </section>
 
 <!-- ===================================================== -->
-<!-- IMPACT AT A GLANCE -->
+<!-- WHY ORGANIZATIONS WORK WITH ME -->
 <!-- ===================================================== -->
 
-<section class="impact">
-
-<div class="container">
-
-<div class="section-heading"
-data-aos="fade-up">
-
-<span>
-
-Professional Impact
-
-</span>
-
-<h2>
-
-What I Bring To Every Assignment
-
-</h2>
-
-</div>
-
-<div class="impact-grid">
-
-<div class="impact-card">
-
-<i class="fa-solid fa-lightbulb"></i>
-
-<h3>
-
-Evidence-Based Decision Making
-
-</h3>
-
-<p>
-
-Helping organizations
-transform complex datasets
-into strategic programme
-decisions.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>
-
-Results Measurement
-
-</h3>
-
-<p>
-
-Developing monitoring systems,
-performance indicators,
-and reporting frameworks.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>
-
-Capacity Strengthening
-
-</h3>
-
-<p>
-
-Training teams on
-MEAL,
-research,
-digital data collection,
-and statistics.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-globe"></i>
-
-<h3>
-
-Regional Experience
-
-</h3>
-
-<p>
-
-Supporting humanitarian
-and development programmes
-across East Africa.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- CORE COMPETENCIES -->
-<!-- ===================================================== -->
-
-<section class="competencies">
-
-<div class="container">
-
-<div class="section-heading"
-data-aos="fade-up">
-
-<span>
-
-Core Competencies
-
-</span>
-
-<h2>
-
-Areas of Professional Expertise
-
-</h2>
-
-</div>
-
-<div class="competency-grid">
-
-<div class="competency-card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h4>
-
-MEAL Systems
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-magnifying-glass-chart"></i>
-
-<h4>
-
-Programme Evaluation
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-database"></i>
-
-<h4>
-
-Data Management
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-chart-pie"></i>
-
-<h4>
-
-Power BI Dashboards
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-calculator"></i>
-
-<h4>
-
-Statistical Analysis
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h4>
-
-R • STATA • SPSS
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-mobile-screen-button"></i>
-
-<h4>
-
-SurveyCTO • Kobo • ODK
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-map-location-dot"></i>
-
-<h4>
-
-GIS Mapping
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h4>
-
-Qualitative Research
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-square-poll-horizontal"></i>
-
-<h4>
-
-Quantitative Research
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-users-gear"></i>
-
-<h4>
-
-Capacity Building
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-file-contract"></i>
-
-<h4>
-
-Donor Reporting
-
-</h4>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- NEXT SECTION -->
-<!-- FEATURED CONSULTANCY PROJECTS -->
-<!-- ===================================================== -->
-  <!-- ===================================================== -->
-<!-- ABOUT -->
-<!-- ===================================================== -->
-
-<section id="about" class="about">
+<section class="why-me">
 
     <div class="container">
 
-        <div class="about-grid">
+        <div class="section-header" data-aos="fade-up">
 
-            <!-- LEFT -->
+            <span class="section-subtitle">
 
-            <div class="about-image" data-aos="fade-right">
+                Why Work With Me
 
-                <div class="image-frame">
+            </span>
 
-                    <img src="images/profile.jpg"
-                         alt="Enoth Birungi">
+            <h2>
 
-                    <div class="experience-badge">
+                Delivering More Than Data
 
-                        <h2>6+</h2>
+            </h2>
 
-                        <p>Years Experience</p>
+        </div>
 
-                    </div>
+        <div class="why-grid">
 
-                </div>
+            <div class="why-card">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>
+
+                    Evidence-Based Solutions
+
+                </h3>
+
+                <p>
+
+                    Transforming complex datasets
+                    into practical programme recommendations.
+
+                </p>
 
             </div>
 
-            <!-- RIGHT -->
+            <div class="why-card">
 
-            <div class="about-content"
-                 data-aos="fade-left">
+                <i class="fa-solid fa-users"></i>
 
-                <span class="section-tag">
+                <h3>
 
-                    ABOUT ME
+                    Collaborative Approach
 
-                </span>
-
-                <h2>
-
-                    Turning Research,
-                    Data and Evidence
-                    Into Better Decisions
-
-                </h2>
+                </h3>
 
                 <p>
 
-                    I am a Monitoring,
-                    Evaluation,
-                    Accountability and Learning (MEAL)
-                    Specialist and Statistician with over
-                    six years of experience supporting
-                    humanitarian and development programmes
-                    across Uganda,
-                    Kenya,
-                    and South Sudan.
+                    Working closely with
+                    programme teams,
+                    government institutions,
+                    NGOs,
+                    and donors.
 
                 </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+
+                    High Quality Outputs
+
+                </h3>
 
                 <p>
 
-                    My work focuses on strengthening
-                    programme performance through
-                    robust monitoring systems,
-                    high-quality evaluations,
-                    digital data solutions,
-                    statistical analysis,
-                    dashboards,
-                    and evidence-based reporting.
+                    Delivering reliable,
+                    timely,
+                    and actionable evidence
+                    that strengthens programme performance.
 
                 </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+
+                    Professional Excellence
+
+                </h3>
 
                 <p>
 
-                    I have successfully worked with
-                    international NGOs,
-                    consortiums,
-                    consulting firms,
-                    donor-funded programmes,
-                    and government institutions across
-                    Education,
-                    WASH,
-                    Nutrition,
-                    Livelihoods,
-                    Protection,
-                    Health,
-                    Climate,
-                    Gender,
-                    Youth,
-                    and Governance.
+                    Committed to integrity,
+                    accountability,
+                    innovation,
+                    and continuous learning.
 
                 </p>
-
-                <div class="about-buttons">
-
-                    <a href="#projects"
-                       class="primary-btn">
-
-                        View Consultancy Work
-
-                    </a>
-
-                    <a href="docs/Enoth_Birungi_CV.pdf"
-                       download
-                       class="secondary-btn">
-
-                        Download CV
-
-                    </a>
-
-                </div>
 
             </div>
 
@@ -857,303 +1053,6 @@ Donor Reporting
 </section>
 
 <!-- ===================================================== -->
-<!-- IMPACT AT A GLANCE -->
-<!-- ===================================================== -->
-
-<section class="impact">
-
-<div class="container">
-
-<div class="section-heading"
-data-aos="fade-up">
-
-<span>
-
-Professional Impact
-
-</span>
-
-<h2>
-
-What I Bring To Every Assignment
-
-</h2>
-
-</div>
-
-<div class="impact-grid">
-
-<div class="impact-card">
-
-<i class="fa-solid fa-lightbulb"></i>
-
-<h3>
-
-Evidence-Based Decision Making
-
-</h3>
-
-<p>
-
-Helping organizations
-transform complex datasets
-into strategic programme
-decisions.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>
-
-Results Measurement
-
-</h3>
-
-<p>
-
-Developing monitoring systems,
-performance indicators,
-and reporting frameworks.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>
-
-Capacity Strengthening
-
-</h3>
-
-<p>
-
-Training teams on
-MEAL,
-research,
-digital data collection,
-and statistics.
-
-</p>
-
-</div>
-
-<div class="impact-card">
-
-<i class="fa-solid fa-globe"></i>
-
-<h3>
-
-Regional Experience
-
-</h3>
-
-<p>
-
-Supporting humanitarian
-and development programmes
-across East Africa.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- CORE COMPETENCIES -->
-<!-- ===================================================== -->
-
-<section class="competencies">
-
-<div class="container">
-
-<div class="section-heading"
-data-aos="fade-up">
-
-<span>
-
-Core Competencies
-
-</span>
-
-<h2>
-
-Areas of Professional Expertise
-
-</h2>
-
-</div>
-
-<div class="competency-grid">
-
-<div class="competency-card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h4>
-
-MEAL Systems
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-magnifying-glass-chart"></i>
-
-<h4>
-
-Programme Evaluation
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-database"></i>
-
-<h4>
-
-Data Management
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-chart-pie"></i>
-
-<h4>
-
-Power BI Dashboards
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-calculator"></i>
-
-<h4>
-
-Statistical Analysis
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h4>
-
-R • STATA • SPSS
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-mobile-screen-button"></i>
-
-<h4>
-
-SurveyCTO • Kobo • ODK
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-map-location-dot"></i>
-
-<h4>
-
-GIS Mapping
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h4>
-
-Qualitative Research
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-square-poll-horizontal"></i>
-
-<h4>
-
-Quantitative Research
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-users-gear"></i>
-
-<h4>
-
-Capacity Building
-
-</h4>
-
-</div>
-
-<div class="competency-card">
-
-<i class="fa-solid fa-file-contract"></i>
-
-<h4>
-
-Donor Reporting
-
-</h4>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- NEXT SECTION -->
-<!-- FEATURED CONSULTANCY PROJECTS -->
-<!-- ===================================================== -->
-  <!-- ===================================================== -->
 <!-- PROFESSIONAL EXPERIENCE -->
 <!-- ===================================================== -->
 
@@ -1161,30 +1060,29 @@ Donor Reporting
 
 <div class="container">
 
-<div class="section-heading" data-aos="fade-up">
+<div class="section-header" data-aos="fade-up">
 
-<span>
+<span class="section-subtitle">
 
-Professional Journey
+Professional Experience
 
 </span>
 
 <h2>
 
-Career Experience
+Career Journey
 
 </h2>
 
 <p>
 
-My experience spans monitoring,
+A progressive career supporting humanitarian,
+development,
+government,
+and private sector programmes through monitoring,
 evaluation,
-research,
 statistics,
-digital data systems,
-capacity building,
-and evidence generation across
-humanitarian and development programmes.
+and evidence generation.
 
 </p>
 
@@ -1192,25 +1090,21 @@ humanitarian and development programmes.
 
 <div class="timeline">
 
-<!-- ITEM 1 -->
+<!-- ITEM -->
 
-<div class="timeline-item left"
-data-aos="fade-right">
+<div class="timeline-item">
+
+<div class="timeline-date">
+
+2025 – Present
+
+</div>
 
 <div class="timeline-content">
 
-<span class="timeline-date">
-
-2026 – Present
-
-</span>
-
 <h3>
 
-Research,
-Monitoring,
-Evaluation &
-Learning Specialist
+Monitoring, Evaluation & Research Consultant
 
 </h3>
 
@@ -1222,17 +1116,12 @@ Evidence & Insights Group International
 
 <p>
 
-Leading Monitoring,
-Evaluation,
-Research,
-Learning and Accountability
-functions across multiple projects,
-developing MEAL frameworks,
-indicator tracking systems,
+Leading programme evaluations,
+research,
+monitoring systems,
 Power BI dashboards,
-digital data systems,
-and supporting evidence-based
-programme management.
+indicator frameworks,
+and learning systems across multiple donor-funded programmes.
 
 </p>
 
@@ -1240,23 +1129,21 @@ programme management.
 
 </div>
 
-<!-- ITEM 2 -->
+<!-- ITEM -->
 
-<div class="timeline-item right"
-data-aos="fade-left">
+<div class="timeline-item">
 
-<div class="timeline-content">
-
-<span class="timeline-date">
+<div class="timeline-date">
 
 2025
 
-</span>
+</div>
+
+<div class="timeline-content">
 
 <h3>
 
-Monitoring &
-Data Consultant
+Monitoring & Data Consultant
 
 </h3>
 
@@ -1268,13 +1155,11 @@ Tax Justice Network Africa
 
 <p>
 
-Supported Citizen Generated
-Data Systems by strengthening
-monitoring systems,
+Supported citizen-generated data systems,
 data analytics,
-dashboard development,
-evidence generation,
-and donor reporting.
+capacity building,
+Power BI dashboards,
+and programme monitoring.
 
 </p>
 
@@ -1282,23 +1167,21 @@ and donor reporting.
 
 </div>
 
-<!-- ITEM 3 -->
+<!-- ITEM -->
 
-<div class="timeline-item left"
-data-aos="fade-right">
+<div class="timeline-item">
 
-<div class="timeline-content">
-
-<span class="timeline-date">
+<div class="timeline-date">
 
 2023 – 2025
 
-</span>
+</div>
+
+<div class="timeline-content">
 
 <h3>
 
-Research &
-Evaluation Data Analyst
+Research & Evaluation Data Analyst
 
 </h3>
 
@@ -1310,15 +1193,12 @@ MAARIFA Consult
 
 <p>
 
-Led quantitative and qualitative
-analysis,
-digital data collection,
+Led quantitative analysis,
+qualitative research,
 Power BI dashboards,
+digital data collection,
 programme evaluations,
-market assessments,
-and reporting for
-international NGOs
-and government programmes.
+and donor reporting.
 
 </p>
 
@@ -1326,41 +1206,37 @@ and government programmes.
 
 </div>
 
-<!-- ITEM 4 -->
+<!-- ITEM -->
 
-<div class="timeline-item right"
-data-aos="fade-left">
+<div class="timeline-item">
+
+<div class="timeline-date">
+
+2022
+
+</div>
 
 <div class="timeline-content">
 
-<span class="timeline-date">
-
-2021 – 2023
-
-</span>
-
 <h3>
 
-Monitoring &
-Data Consultant
+Research Assistant
 
 </h3>
 
 <h4>
 
-Tax Justice Network Africa
+ACE Policy Research Institute
 
 </h4>
 
 <p>
 
-Strengthened district
-data systems,
-supported Data Quality
-Assessments,
-capacity building,
-performance monitoring,
-and evidence-based planning.
+Supported policy research,
+data management,
+field supervision,
+statistical analysis,
+and technical reporting.
 
 </p>
 
@@ -1378,14 +1254,13 @@ and evidence-based planning.
 <!-- RESEARCH AREAS -->
 <!-- ===================================================== -->
 
-<section id="research" class="research">
+<section class="research">
 
 <div class="container">
 
-<div class="section-heading"
-data-aos="fade-up">
+<div class="section-header">
 
-<span>
+<span class="section-subtitle">
 
 Sector Experience
 
@@ -1397,45 +1272,37 @@ Research Areas
 
 </h2>
 
-<p>
-
-Extensive experience supporting
-humanitarian and development
-programmes across multiple sectors.
-
-</p>
-
 </div>
 
 <div class="research-grid">
 
-<span class="research-tag">Education</span>
+<span>Education</span>
 
-<span class="research-tag">Livelihoods</span>
+<span>Livelihoods</span>
 
-<span class="research-tag">Food Security</span>
+<span>Food Security</span>
 
-<span class="research-tag">Nutrition</span>
+<span>Nutrition</span>
 
-<span class="research-tag">WASH</span>
+<span>Health</span>
 
-<span class="research-tag">Health</span>
+<span>Protection</span>
 
-<span class="research-tag">Gender</span>
+<span>Mental Health</span>
 
-<span class="research-tag">Youth</span>
+<span>Gender</span>
 
-<span class="research-tag">Protection</span>
+<span>Youth</span>
 
-<span class="research-tag">Climate Change</span>
+<span>Climate Change</span>
 
-<span class="research-tag">Governance</span>
+<span>Governance</span>
 
-<span class="research-tag">Market Systems</span>
+<span>Market Systems</span>
 
-<span class="research-tag">Mental Health</span>
+<span>WASH</span>
 
-<span class="research-tag">Refugee Programming</span>
+<span>Refugee Programming</span>
 
 </div>
 
@@ -1444,17 +1311,16 @@ programmes across multiple sectors.
 </section>
 
 <!-- ===================================================== -->
-<!-- SOFTWARE & TOOLS -->
+<!-- SOFTWARE -->
 <!-- ===================================================== -->
 
-<section id="software" class="software">
+<section class="software">
 
 <div class="container">
 
-<div class="section-heading"
-data-aos="fade-up">
+<div class="section-header">
 
-<span>
+<span class="section-subtitle">
 
 Technology Stack
 
@@ -1462,21 +1328,13 @@ Technology Stack
 
 <h2>
 
-Software & Tools
+Software & Digital Tools
 
 </h2>
 
 </div>
 
 <div class="software-grid">
-
-<div class="software-card">
-
-<i class="fa-solid fa-chart-simple"></i>
-
-<h4>Power BI</h4>
-
-</div>
 
 <div class="software-card">
 
@@ -1504,9 +1362,17 @@ Software & Tools
 
 <div class="software-card">
 
+<i class="fa-solid fa-chart-simple"></i>
+
+<h4>Power BI</h4>
+
+</div>
+
+<div class="software-card">
+
 <i class="fa-solid fa-table"></i>
 
-<h4>Advanced Excel</h4>
+<h4>Excel</h4>
 
 </div>
 
@@ -1536,17 +1402,17 @@ Software & Tools
 
 <div class="software-card">
 
-<i class="fa-solid fa-cloud"></i>
+<i class="fa-solid fa-code"></i>
 
-<h4>ODK</h4>
+<h4>SQL</h4>
 
 </div>
 
 <div class="software-card">
 
-<i class="fa-solid fa-code"></i>
+<i class="fa-solid fa-laptop-code"></i>
 
-<h4>SQL</h4>
+<h4>ODK</h4>
 
 </div>
 
@@ -1564,28 +1430,31 @@ Software & Tools
 
 <div class="container">
 
-<div class="section-heading"
-data-aos="fade-up">
+<div class="section-header">
 
-<span>
+<span class="section-subtitle">
 
-Professional Capability
+Professional Skills
 
 </span>
 
 <h2>
 
-Technical Skills
+Technical Expertise
 
 </h2>
 
 </div>
 
-<div class="skills-wrapper">
+<div class="skills-grid">
 
 <div class="skill">
 
-<h4>Monitoring & Evaluation</h4>
+<h4>
+
+Monitoring & Evaluation
+
+</h4>
 
 <div class="progress">
 
@@ -1601,7 +1470,11 @@ Technical Skills
 
 <div class="skill">
 
-<h4>Research & Statistics</h4>
+<h4>
+
+Research & Statistics
+
+</h4>
 
 <div class="progress">
 
@@ -1617,7 +1490,11 @@ Technical Skills
 
 <div class="skill">
 
-<h4>Power BI & Dashboards</h4>
+<h4>
+
+Power BI & Dashboards
+
+</h4>
 
 <div class="progress">
 
@@ -1633,7 +1510,11 @@ Technical Skills
 
 <div class="skill">
 
-<h4>Digital Data Systems</h4>
+<h4>
+
+Digital Data Systems
+
+</h4>
 
 <div class="progress">
 
@@ -1649,7 +1530,11 @@ Technical Skills
 
 <div class="skill">
 
-<h4>Capacity Building</h4>
+<h4>
+
+Capacity Building
+
+</h4>
 
 <div class="progress">
 
@@ -1663,6 +1548,26 @@ Technical Skills
 
 </div>
 
+<div class="skill">
+
+<h4>
+
+Technical Report Writing
+
+</h4>
+
+<div class="progress">
+
+<div class="progress-bar" style="width:96%">
+
+96%
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -1670,54 +1575,82 @@ Technical Skills
 </section>
 
 <!-- ===================================================== -->
-<!-- NEXT SECTION -->
-<!-- EDUCATION + CERTIFICATIONS + CONTACT -->
-<!-- ===================================================== -->
-  <!-- ===================================================== -->
 <!-- EDUCATION -->
 <!-- ===================================================== -->
 
 <section id="education" class="education">
 
-<div class="container">
+    <div class="container">
 
-<div class="section-heading" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-up">
 
-<span>Education</span>
+            <span class="section-subtitle">
 
-<h2>Academic Qualifications</h2>
+                Education
 
-</div>
+            </span>
 
-<div class="education-grid">
+            <h2>
 
-<div class="education-card">
+                Academic Background
 
-<i class="fa-solid fa-user-graduate"></i>
+            </h2>
 
-<h3>Master of Statistics</h3>
+        </div>
 
-<h4>Makerere University</h4>
+        <div class="education-grid">
 
-<p>2024 – 2027 (Ongoing)</p>
+            <div class="education-card">
 
-</div>
+                <i class="fa-solid fa-user-graduate"></i>
 
-<div class="education-card">
+                <h3>
 
-<i class="fa-solid fa-graduation-cap"></i>
+                    Master of Statistics
 
-<h3>Bachelor of Statistics</h3>
+                </h3>
 
-<h4>Makerere University</h4>
+                <h4>
 
-<p>2018 – 2021</p>
+                    Makerere University
 
-</div>
+                </h4>
 
-</div>
+                <p>
 
-</div>
+                    2025 – Present
+
+                </p>
+
+            </div>
+
+            <div class="education-card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>
+
+                    Bachelor of Science in Business Statistics
+
+                </h3>
+
+                <h4>
+
+                    Makerere University
+
+                </h4>
+
+                <p>
+
+                    2018 – 2021
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -1725,15 +1658,23 @@ Technical Skills
 <!-- CERTIFICATIONS -->
 <!-- ===================================================== -->
 
-<section id="certifications" class="certifications">
+<section class="certifications">
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-header">
 
-<span>Professional Expertise</span>
+<span class="section-subtitle">
 
-<h2>Methods & Technical Capability</h2>
+Professional Competencies
+
+</span>
+
+<h2>
+
+Training & Certifications
+
+</h2>
 
 </div>
 
@@ -1741,27 +1682,27 @@ Technical Skills
 
 <div class="cert-card">Monitoring & Evaluation</div>
 
-<div class="cert-card">Results-Based Management</div>
-
-<div class="cert-card">Power BI Dashboards</div>
-
-<div class="cert-card">Kobo Toolbox</div>
+<div class="cert-card">Power BI</div>
 
 <div class="cert-card">SurveyCTO</div>
+
+<div class="cert-card">Kobo Toolbox</div>
 
 <div class="cert-card">ODK</div>
 
 <div class="cert-card">Data Quality Assessments</div>
 
-<div class="cert-card">Impact Evaluation</div>
+<div class="cert-card">GIS Mapping</div>
+
+<div class="cert-card">Statistical Analysis</div>
 
 <div class="cert-card">Mixed Methods Research</div>
 
-<div class="cert-card">GIS Mapping</div>
-
-<div class="cert-card">Statistical Modelling</div>
-
 <div class="cert-card">Capacity Building</div>
+
+<div class="cert-card">Project Monitoring</div>
+
+<div class="cert-card">Results-Based Management</div>
 
 </div>
 
@@ -1777,11 +1718,19 @@ Technical Skills
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-header">
 
-<span>Highlights</span>
+<span>
 
-<h2>Career Achievements</h2>
+Career Highlights
+
+</span>
+
+<h2>
+
+Professional Impact
+
+</h2>
 
 </div>
 
@@ -1789,92 +1738,67 @@ Technical Skills
 
 <div class="achievement-card">
 
-<h2>40+</h2>
+<h2>
 
-<p>Research & Evaluation Assignments</p>
+40+
 
-</div>
-
-<div class="achievement-card">
-
-<h2>15+</h2>
-
-<p>International Development Partners</p>
-
-</div>
-
-<div class="achievement-card">
-
-<h2>4</h2>
-
-<p>Countries Supported</p>
-
-</div>
-
-<div class="achievement-card">
-
-<h2>100+</h2>
-
-<p>Professionals Supported & Trained</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- TESTIMONIALS -->
-<!-- ===================================================== -->
-
-<section class="testimonials">
-
-<div class="container">
-
-<div class="section-heading">
-
-<span>Professional Values</span>
-
-<h2>What You Can Expect</h2>
-
-</div>
-
-<div class="testimonial-grid">
-
-<div class="testimonial-card">
+</h2>
 
 <p>
 
-A commitment to rigorous analysis,
-high-quality evidence,
-and practical recommendations that improve programme performance.
+Research &
+Evaluation Assignments
 
 </p>
 
 </div>
 
-<div class="testimonial-card">
+<div class="achievement-card">
+
+<h2>
+
+15+
+
+</h2>
 
 <p>
 
-Collaborative engagement with programme teams,
-government partners,
-and development organizations to strengthen learning and accountability.
+Development
+Partners
 
 </p>
 
 </div>
 
-<div class="testimonial-card">
+<div class="achievement-card">
+
+<h2>
+
+100+
+
+</h2>
 
 <p>
 
-Reliable delivery of research,
-evaluations,
-dashboards,
-and technical reports that meet donor expectations.
+Professionals
+Mentored
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+<h2>
+
+4
+
+</h2>
+
+<p>
+
+Countries
+Supported
 
 </p>
 
@@ -1894,56 +1818,70 @@ and technical reports that meet donor expectations.
 
 <div class="container">
 
-<div class="section-heading">
+<div class="section-header">
 
-<span>Get In Touch</span>
+<span>
 
-<h2>Let's Work Together</h2>
+Contact
+
+</span>
+
+<h2>
+
+Let's Work Together
+
+</h2>
 
 <p>
 
 Available for consultancy,
 research,
-programme evaluations,
-MEAL system development,
-data analytics,
-and technical advisory support.
+monitoring,
+evaluation,
+training,
+and data analytics assignments.
 
 </p>
 
 </div>
 
-<div class="contact-grid">
+<div class="contact-wrapper">
 
 <div class="contact-info">
 
-<h3>Contact Information</h3>
+<h3>
 
-<p>
+Contact Information
+
+</h3>
+
+<ul>
+
+<li>
 
 <i class="fa-solid fa-envelope"></i>
 
 birungienoth@gmail.com
 
-</p>
+</li>
 
-<p>
+<li>
 
 <i class="fa-solid fa-phone"></i>
 
 +256 787 329280
 
-</p>
+</li>
 
-<p>
+<li>
 
 <i class="fa-solid fa-location-dot"></i>
 
 Kampala, Uganda
 
-</p>
+</li>
 
-<p>
+<li>
 
 <i class="fab fa-linkedin"></i>
 
@@ -1955,35 +1893,40 @@ LinkedIn Profile
 
 </a>
 
-</p>
+</li>
+
+</ul>
 
 </div>
 
-<div class="contact-cta">
+<div class="contact-card">
 
 <h3>
 
-Need a MEAL Specialist?
+Need a Consultant?
 
 </h3>
 
 <p>
 
-Whether you need a baseline,
-midline,
-endline evaluation,
-dashboard,
-research study,
-or monitoring system,
-I'd be happy to discuss your project.
+I support governments,
+NGOs,
+consulting firms,
+and development partners with
+research,
+evaluations,
+MEAL systems,
+data analytics,
+Power BI dashboards,
+and digital data solutions.
 
 </p>
 
 <a href="mailto:birungienoth@gmail.com"
 
-class="primary-btn">
+class="btn btn-primary">
 
-Start a Conversation
+Email Me
 
 </a>
 
@@ -2005,24 +1948,21 @@ Start a Conversation
 
 <div class="footer-content">
 
-<h2>Enoth Birungi</h2>
+<h2>
+
+Enoth Birungi
+
+</h2>
 
 <p>
 
 Monitoring, Evaluation,
-Accountability & Learning Specialist
+Accountability &
+Learning Specialist
 
 </p>
 
-<div class="footer-social">
-
-<a href="https://www.linkedin.com/in/birungi-enoth-705671269"
-
-target="_blank">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
+<div class="footer-icons">
 
 <a href="mailto:birungienoth@gmail.com">
 
@@ -2036,9 +1976,15 @@ target="_blank">
 
 </a>
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME"
+<a href="https://www.linkedin.com/in/birungi-enoth-705671269"
 
 target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="#">
 
 <i class="fab fa-github"></i>
 
@@ -2046,7 +1992,7 @@ target="_blank">
 
 </div>
 
-<p class="copyright">
+<p>
 
 © 2026 Enoth Birungi.
 All Rights Reserved.
@@ -2059,7 +2005,9 @@ All Rights Reserved.
 
 </footer>
 
-<!-- Back To Top -->
+<!-- ===================================================== -->
+<!-- BACK TO TOP -->
+<!-- ===================================================== -->
 
 <button id="scrollTop">
 
@@ -2067,11 +2015,11 @@ All Rights Reserved.
 
 </button>
 
-<!-- AOS -->
+<!-- ===================================================== -->
+<!-- JAVASCRIPT -->
+<!-- ===================================================== -->
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<!-- Main JS -->
 
 <script src="script.js"></script>
 
