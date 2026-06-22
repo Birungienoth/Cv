@@ -1,17 +1,26 @@
 /*==================================================
-  ENOTH BIRUNGI PORTFOLIO
+ENOTH BIRUNGI PORTFOLIO
+Author: Enoth Birungi
+==================================================*/
+
+/*==================================================
+GOOGLE FONT
 ==================================================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/*=============================
+/*==================================================
 RESET
-==============================*/
+==================================================*/
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
 
 html{
@@ -26,9 +35,9 @@ body{
 
     background:#f7f9fc;
 
-    color:#2d3436;
+    color:#222;
 
-    line-height:1.8;
+    line-height:1.7;
 
     overflow-x:hidden;
 
@@ -54,9 +63,15 @@ ul{
 
 }
 
-/*=============================
+section{
+
+    padding:100px 0;
+
+}
+
+/*==================================================
 VARIABLES
-==============================*/
+==================================================*/
 
 :root{
 
@@ -72,11 +87,11 @@ VARIABLES
 
     --white:#ffffff;
 
-    --light:#F7F9FC;
+    --light:#F8FAFD;
 
     --border:#E5EAF2;
 
-    --shadow:0 15px 35px rgba(0,0,0,.08);
+    --shadow:0 12px 35px rgba(0,0,0,.08);
 
     --radius:18px;
 
@@ -84,53 +99,43 @@ VARIABLES
 
 }
 
-/*=============================
+/*==================================================
 CONTAINER
-==============================*/
+==================================================*/
 
 .container{
 
     width:90%;
 
-    max-width:1240px;
+    max-width:1250px;
 
     margin:auto;
 
 }
 
-/*=============================
-SECTION
-==============================*/
-
-section{
-
-    padding:100px 0;
-
-}
-
-/*=============================
+/*==================================================
 TYPOGRAPHY
-==============================*/
+==================================================*/
 
 h1{
 
-    font-size:58px;
+    font-size:60px;
 
     line-height:1.15;
 
-    color:var(--dark);
-
     font-weight:800;
+
+    color:var(--dark);
 
 }
 
 h2{
 
-    font-size:40px;
+    font-size:42px;
+
+    font-weight:700;
 
     color:var(--dark);
-
-    margin-bottom:15px;
 
 }
 
@@ -138,15 +143,11 @@ h3{
 
     font-size:28px;
 
-    color:var(--dark);
-
 }
 
 h4{
 
     font-size:20px;
-
-    color:var(--primary);
 
 }
 
@@ -158,11 +159,11 @@ p{
 
 }
 
-/*=============================
-SECTION HEADER
-==============================*/
+/*==================================================
+SECTION TITLE
+==================================================*/
 
-.section-header{
+.section-title{
 
     text-align:center;
 
@@ -174,9 +175,7 @@ SECTION HEADER
 
 }
 
-.section-subtitle{
-
-    display:inline-block;
+.section-title span{
 
     color:var(--primary);
 
@@ -186,13 +185,17 @@ SECTION HEADER
 
     text-transform:uppercase;
 
-    margin-bottom:15px;
+}
+
+.section-title h2{
+
+    margin:20px 0;
 
 }
 
-/*=============================
+/*==================================================
 BUTTONS
-==============================*/
+==================================================*/
 
 .btn{
 
@@ -204,13 +207,13 @@ BUTTONS
 
     gap:10px;
 
-    padding:15px 34px;
+    padding:16px 36px;
 
     border-radius:50px;
 
     font-weight:600;
 
-    transition:.35s;
+    transition:var(--transition);
 
 }
 
@@ -226,9 +229,9 @@ BUTTONS
 
 .btn-primary:hover{
 
-    transform:translateY(-4px);
-
     background:var(--gold);
+
+    transform:translateY(-5px);
 
 }
 
@@ -237,8 +240,6 @@ BUTTONS
     border:2px solid var(--primary);
 
     color:var(--primary);
-
-    background:white;
 
 }
 
@@ -250,9 +251,9 @@ BUTTONS
 
 }
 
-/*=============================
+/*==================================================
 HEADER
-==============================*/
+==================================================*/
 
 .header{
 
@@ -266,9 +267,9 @@ HEADER
 
     background:white;
 
-    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
 
-    box-shadow:0 2px 20px rgba(0,0,0,.05);
+    z-index:999;
 
 }
 
@@ -280,7 +281,7 @@ HEADER
 
     align-items:center;
 
-    min-height:85px;
+    min-height:90px;
 
 }
 
@@ -324,7 +325,7 @@ HEADER
 
 }
 
-.nav-right{
+.nav-actions{
 
     display:flex;
 
@@ -334,11 +335,11 @@ HEADER
 
 }
 
-#theme-toggle{
+.theme-toggle{
 
-    width:45px;
+    width:48px;
 
-    height:45px;
+    height:48px;
 
     border:none;
 
@@ -350,11 +351,9 @@ HEADER
 
     color:var(--primary);
 
-    font-size:18px;
-
 }
 
-.menu-btn{
+.menu-toggle{
 
     display:none;
 
@@ -362,43 +361,45 @@ HEADER
 
     cursor:pointer;
 
+    background:none;
+
+    border:none;
+
 }
 
-/*=============================
+/*==================================================
 HERO
-==============================*/
+==================================================*/
 
 .hero{
 
-    padding-top:160px;
+    padding-top:170px;
 
-    padding-bottom:90px;
-
-    background:#f7f9fc;
+    background:linear-gradient(180deg,#f7f9fc,#ffffff);
 
 }
 
-.hero-grid{
+.hero-wrapper{
 
     display:grid;
 
     grid-template-columns:58% 42%;
 
-    gap:60px;
+    gap:70px;
 
     align-items:center;
 
 }
 
-.hero-tag{
+.hero-badge{
 
     display:inline-block;
 
-    background:#eaf3ff;
+    background:#e8f2fd;
 
     color:var(--primary);
 
-    padding:10px 18px;
+    padding:10px 20px;
 
     border-radius:50px;
 
@@ -416,7 +417,7 @@ HERO
 
 .hero h2{
 
-    margin-top:25px;
+    margin-top:20px;
 
 }
 
@@ -424,35 +425,43 @@ HERO
 
     color:var(--primary);
 
-    margin-bottom:20px;
+    margin:15px 0 25px;
 
 }
 
 .hero p{
 
-    margin:30px 0;
-
     max-width:650px;
+
+    margin-bottom:30px;
 
 }
 
 .current-role{
 
-    display:inline-flex;
+    display:flex;
 
     align-items:center;
 
-    gap:10px;
+    gap:15px;
 
     background:white;
 
-    padding:16px 22px;
+    padding:18px 22px;
 
     border-radius:15px;
 
     box-shadow:var(--shadow);
 
     margin-bottom:35px;
+
+}
+
+.current-role i{
+
+    font-size:26px;
+
+    color:var(--primary);
 
 }
 
@@ -466,27 +475,27 @@ HERO
 
 }
 
-.social-links{
+.hero-social{
 
     display:flex;
 
-    gap:15px;
+    gap:18px;
 
 }
 
-.social-links a{
+.hero-social a{
 
     width:50px;
 
     height:50px;
 
-    border-radius:50%;
-
     display:flex;
+
+    justify-content:center;
 
     align-items:center;
 
-    justify-content:center;
+    border-radius:50%;
 
     background:white;
 
@@ -494,11 +503,11 @@ HERO
 
     box-shadow:var(--shadow);
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
-.social-links a:hover{
+.hero-social a:hover{
 
     background:var(--primary);
 
@@ -508,9 +517,9 @@ HERO
 
 }
 
-/*=============================
-PROFILE IMAGE
-==============================*/
+/*==================================================
+PHOTO
+==================================================*/
 
 .hero-image{
 
@@ -530,41 +539,40 @@ PROFILE IMAGE
 
 .image-card img{
 
-    border-radius:25px;
+    border-radius:24px;
 
     box-shadow:0 25px 50px rgba(0,0,0,.15);
 
-    object-fit:cover;
-
 }
 
-.availability{
+.availability-card{
 
     position:absolute;
 
-    bottom:25px;
+    bottom:20px;
 
-    left:25px;
+    left:20px;
 
     background:white;
 
-    padding:15px 22px;
+    padding:16px 24px;
 
     border-radius:15px;
 
-    font-weight:600;
+    box-shadow:var(--shadow);
 
     color:var(--primary);
 
-    box-shadow:var(--shadow);
+    font-weight:600;
 
 }
 
-.availability i{
+.availability-card i{
 
-    color:#2ecc71;
+    color:#27ae60;
 
     margin-right:8px;
 
 }
+
 
